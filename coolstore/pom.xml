@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat</groupId>
   <artifactId>coolstore</artifactId>
-  <version>3.0.1</version>
+  <version>3.0.2</version>
   <packaging>kjar</packaging>
-  <name>Coolstore app demo</name>
+  <name>Coolstore Demo BRMS</name>
   <description>JBoss BRMS Coolstore project</description>
   <properties>
     <version.org.kie>6.5.0.Final-redhat-12</version.org.kie>
