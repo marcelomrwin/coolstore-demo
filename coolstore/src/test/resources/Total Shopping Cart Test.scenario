@@ -12,17 +12,17 @@
         <field-data>
           <name>cartItemTotal</name>
           <value>0.0</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
         <field-data>
           <name>shippingTotal</name>
           <value>0.0</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
         <field-data>
           <name>cartItemPromoSavings</name>
           <value></value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>$sc1</name>
@@ -34,38 +34,48 @@
         <field-data>
           <name>cartItemTotal</name>
           <value>25.0</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
         <field-data>
           <name>shippingTotal</name>
           <value>2.99</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
         <field-data>
           <name>cartItemPromoSavings</name>
           <value>3.0</value>
-          <nature>1</nature>
+          <nature>4</nature>
         </field-data>
       </fieldData>
       <name>$sc2</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>5</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Total Shopping Cart</ruleName>
+      <explanation>Rule [Total Shopping Cart] was activated 2 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>cartTotal</fieldName>
           <expected>0.0</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc1] field [cartTotal] was [0.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>cartItemPromoSavings</fieldName>
           <expected>0.0</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc1] field [cartItemPromoSavings] was [0.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -77,13 +87,18 @@
       <fieldValues>
         <expect-field>
           <fieldName>cartTotal</fieldName>
-          <expected>27.990000000000002</expected>
+          <expected>0.0</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc2] field [cartTotal] was [0.0] expected [27.990000000000002].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>cartItemPromoSavings</fieldName>
           <expected>-3.0</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc2] field [cartItemPromoSavings] was [-3.0].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -92,6 +107,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-08-08 20:20:16.946 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName></packageName>
@@ -102,4 +118,7 @@
       </org.drools.workbench.models.datamodel.imports.Import>
     </imports>
   </imports>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
