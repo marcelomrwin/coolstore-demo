@@ -51,16 +51,16 @@
     <repository>
       <include>true</include>
       <metadata>
-        <id>jboss-public</id>
-        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        <id>fusesource</id>
+        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
     <repository>
       <include>true</include>
       <metadata>
-        <id>fusesource</id>
-        <url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+        <id>jboss-public</id>
+        <url>https://repository.jboss.org/nexus/content/groups/public/</url>
         <source>SETTINGS</source>
       </metadata>
     </repository>
